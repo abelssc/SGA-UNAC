@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #232C33;
+}
+/* 
+// ===================================================================================
+//                                  MENU
+// ===================================================================================
+*/
+.navigation{
+    position: fixed;
+    width: 70px;
+    height: 100%;
+    background-color: #2B343B;
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+}
+.navigation:hover{
+    width: 310px;
+}
+.navigation>ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation>div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: block;
+    height: 100%;
+    width: 10px;
+    background-color: #4187F6;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation>ul>li:hover:not(.accordion-child),
+.accordion-child>ul>li:hover
+{
+    background-color: #232C33;
+}
+.navigation ul li a{
+    color: #fff;
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}  
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+
+}
+.navigation ul li a .icon .fa{
+    font-size: 24px;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+
+}
+/* -----------------Hamburger Toggle--------- */
+.toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #2B343B;
+    cursor: pointer;
+}
+.toggle.active{
+    background-color: #4187F6;
+}
+.toggle:before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle.active:before{
+    content: '\f00d ';
+}
+/*----------------Acordion----------------*/
+.accordion + .accordion-child{
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+/*---------js----------*/
+.navigation.active{
+    width: 310px;
+}
+.accordion.active + .accordion-child{
+    height: 480px;
+}
+.selected{
+    background-color: #4187F6 !important;
+}
+
+/*
+// ===================================================================================
+//                                  FRAMES
+// ===================================================================================
+*/
+.iframes{
+    position: absolute;
+    width: calc(100% - 310px);
+    bottom: 0;
+    left: 310px;
+}
+.iframes iframe{
+    width: 100%;
+    height: 700px;
+}
