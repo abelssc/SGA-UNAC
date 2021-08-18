@@ -7,7 +7,7 @@
     <title>UNAC | SGA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cursos.css">
 </head>
 <body>
 <!--
@@ -17,8 +17,8 @@
 -->
     <div class="navigation">
         <ul>
-            <li class="selected">
-                <a href="#">
+            <li>
+                <a href="index.html">
                     <span class="icon"><i class="fa fa-home" aria-hidden="true"></i>
                     </span>
                     <span class="title">Home</span>
@@ -38,7 +38,7 @@
                     <span class="title">Matricula</span>
                 </a>
             </li>
-            <li>
+            <li class="selected">
                 <a href="#">
                     <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i>
                     </span>
@@ -134,11 +134,149 @@
     <!---->
 
     <section class="principal">
-        <footer>
-            <p>UNIVERSIDAD NACIONAL DEL CALLAO @2021 - TODOS LOS DERECHOS RESERVADOS</p>
-        </footer>
+        <div class="cursos-category">
+            <div class="cursos-category-item active" data-category="all">all</div>
+            <div class="cursos-category-item" data-category="lunes">lunes</div>
+            <div class="cursos-category-item" data-category="martes">martes</div>
+            <div class="cursos-category-item" data-category="miercoles">miercoles</div>
+            <div class="cursos-category-item" data-category="jueves">jueves</div>
+            <div class="cursos-category-item" data-category="viernes">viernes</div>
+            <div class="cursos-category-item" data-category="sabado">sabado</div>
+        </div>
+        <div class="cursos">
+            <div class="cursos-card" style="--i:1" data-category="miercoles">
+                <div class="cursos-box">
+                    <div class="cursos-contenido">
+                        <h2 class="cursos-codigo">SOP501</h2>
+                        <h2 class="cursos-seccion">01S</h2>
+                        <h3 class="cursos-nombre">Aplicacion de Base de Datos</h3>
+                        <div class="cursos-docente">
+                            <span class="cursos-docente-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="cursos-docente-name">GARCIA DIAZ BERTILA LIDUVINA</span>
+                        </div>
+                        <div class="cursos-time">
+                            <span class="cursos-time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="cursos-time-name">Mie 16:20 - 18:00</span>
+                        </div>
+                        <a href="#">Ir a Clases</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cursos-card" style="--i:2" data-category="lunes">
+                <div class="cursos-box">
+                    <div class="cursos-contenido">
+                        <h2 class="cursos-codigo">SOE411</h2>
+                        <h2 class="cursos-seccion">01S</h2>
+                        <h3 class="cursos-nombre">Matemática Discreta</h3>
+                        <div class="cursos-docente">
+                            <span class="cursos-docente-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="cursos-docente-name">MAS AZAHUANCHE GUILLERMO ANTONIO</span>
+                        </div>
+                        <div class="cursos-time">
+                            <span class="cursos-time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="cursos-time-name">Lun 08:00 - 13:00</span>
+                        </div>
+                        <a href="#">Ir a Clases</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cursos-card" style="--i:3" data-category="jueves">
+                <div class="cursos-box">
+                    <div class="cursos-contenido">
+                        <h2 class="cursos-codigo">SOE414</h2>
+                        <h2 class="cursos-seccion">01S</h2>
+                        <h3 class="cursos-nombre">Programación Web</h3>
+                        <div class="cursos-docente">
+                            <span class="cursos-docente-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="cursos-docente-name">ORTEGA ROJAS YESMI KATIA</span>
+                        </div>
+                        <div class="cursos-time">
+                            <span class="cursos-time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="cursos-time-name">Jue 08:00 - 13:00</span>
+                        </div>
+                        <a href="#">Ir a Clases</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cursos-card" style="--i:4" data-category="viernes">
+                <div class="cursos-box">
+                    <div class="cursos-contenido">
+                        <h2 class="cursos-codigo">SOE516</h2>
+                        <h2 class="cursos-seccion">01S</h2>
+                        <h3 class="cursos-nombre">Sistemas Digitales</h3>
+                        <div class="cursos-docente">
+                            <span class="cursos-docente-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="cursos-docente-name">VILCAPUMA MALPICA HERNAN MARIO</span>
+                        </div>
+                        <div class="cursos-time">
+                            <span class="cursos-time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="cursos-time-name">Vie 17:10 - 20:00</span>
+                        </div>
+                        <a href="#">Ir a Clases</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cursos-card" style="--i:5" data-category="miercoles">
+                <div class="cursos-box">
+                    <div class="cursos-contenido">
+                        <h2 class="cursos-codigo">SER701</h2>
+                        <h2 class="cursos-seccion">02S</h2>
+                        <h3 class="cursos-nombre">Telecomunicaciones</h3>
+                        <div class="cursos-docente">
+                            <span class="cursos-docente-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="cursos-docente-name">VILCHEZ INGA CESAR</span>
+                        </div>
+                        <div class="cursos-time">
+                            <span class="cursos-time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="cursos-time-name">Mie 19:00 - 20:00</span>
+                        </div>
+                        <a href="#">Ir a Clases</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cursos-card" style="--i:6" data-category="lunes">
+                <div class="cursos-box">
+                    <div class="cursos-contenido">
+                        <h2 class="cursos-codigo">SOP604</h2>
+                        <h2 class="cursos-seccion">02S</h2>
+                        <h3 class="cursos-nombre">Simulación de Sistemas</h3>
+                        <div class="cursos-docente">
+                            <span class="cursos-docente-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="cursos-docente-name">RAMOS CHOQUEHUANCA ANGELINO</span>
+                        </div>
+                        <div class="cursos-time">
+                            <span class="cursos-time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="cursos-time-name">Lun 13:00 - 17:00</span>
+                        </div>
+                        <a href="#">Ir a Clases</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cursos-card" style="--i:7" data-category="martes">
+                <div class="cursos-box">
+                    <div class="cursos-contenido">
+                        <h2 class="cursos-codigo">SOP602</h2>
+                        <h2 class="cursos-seccion">02S</h2>
+                        <h3 class="cursos-nombre">Sistemas de Información</h3>
+                        <div class="cursos-docente">
+                            <span class="cursos-docente-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="cursos-docente-name">RAMOS CHOQUEHUANCA ANGELINO</span>
+                        </div>
+                        <div class="cursos-time">
+                            <span class="cursos-time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <span class="cursos-time-name">Mar 13:00 - 17:00</span>
+                        </div>
+                        <a href="#">Ir a Clases</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+    <footer>
+        <p>UNIVERSIDAD NACIONAL DEL CALLAO @2021 - TODOS LOS DERECHOS RESERVADOS</p>
+    </footer>
+
     <script src="js/js.js"></script>
+    <script src="js/cursos.js"></script>
 </body>
 </html>
