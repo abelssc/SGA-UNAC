@@ -64,7 +64,7 @@ svg circle:nth-child(2){
 .asistencia-card{
     position: relative;
     width: 250px;
-    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    background: linear-gradient(0deg,#2B343B,#1c3350,#2B343B);
     display: flex;
     justify-content: center;
     align-items: center;
