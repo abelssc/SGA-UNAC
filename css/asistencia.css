@@ -16,10 +16,10 @@ svg circle{
 svg circle:nth-child(2){
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
-    transition: 0.5s;
+    transition: .5s;
 }
 .asistencia-card:hover svg circle:nth-child(2){
-    stroke-dashoffset: 300;
+    stroke-dasharray: 20;
 }
 .asistencia-card:nth-child(1) svg circle:nth-child(2){
     stroke: #00ff43;
@@ -49,6 +49,7 @@ svg circle:nth-child(2){
     stroke: #d1656e;
     stroke-dashoffset: calc(440 - (440 * 95) / 100);
 }
+
 .asistencia{
     position: relative;
     max-width: 1200px;
